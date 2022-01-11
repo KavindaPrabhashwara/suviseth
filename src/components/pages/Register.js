@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import marry from '../marry.jpg';
 import './Login.css';
 
 const Field = React.forwardRef(({ label, type }, ref) => {
@@ -45,7 +44,7 @@ const Form = ({ onSubmit }) => {
 
 // Usage example:
 
-const Logging = () => {
+const Register = () => {
   const handleSubmit = data => {
     const json = JSON.stringify(data, null, 4);
     console.clear();
@@ -61,4 +60,4 @@ const Logging = () => {
 
 
 
-export default Registration;
+export default Register;
