@@ -5,8 +5,8 @@ import './Login.css';
 const Field = React.forwardRef(({ label, type }, ref) => {
   return (
     <div>
-      <label className='labelStyle' >{ label }</label>
-      <input className='inputStyle' ref={ ref } type={ type } />
+      <label className='logging__labelStyle' >{ label }</label>
+      <input className='logging__inputStyle' ref={ ref } type={ type } />
     </div>
   );
 });
@@ -29,14 +29,14 @@ const Form = ({ onSubmit }) => {
     onSubmit(data);
   };
   return (
-    <form className='formStyle' onSubmit={ handleSubmit } >
+    <form className='logging__formStyle' onSubmit={ handleSubmit } >
       <Field ref={ firstnameRef } label="First Name:" type="text" />
       <Field ref={ secondnameRef } label="Second Name:" type="text" />
       <Field ref={ emailRef } label="Email:" type="text" />
       <Field ref={ passwordRef } label="Password:" type="password" />
       <Field ref={ confirmpasswordRef } label="Confirm Password:" type="password" />
       <div>
-        <button className='submitStyle' type="submit">Register</button>
+        <button className='logging__submitStyle' type="submit">Register</button>
       </div>
     </form>
   );
@@ -51,7 +51,7 @@ const Register = () => {
     console.log(json);
   };
   return (
-    <div className='appStyle'>
+    <div className='logging__appStyle'>
       <Form onSubmit={ handleSubmit } />
     </div>
   );

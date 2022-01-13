@@ -25,7 +25,7 @@ function App() {
           <Route path='/services' element={ <Services /> } />
           <Route path='/products' element={ <Products /> } />
           <Route path='/sign-in' element={ <Logging /> } />
-          <Route path='/sign-up' element={ <Logging /> } />
+          <Route path='/sign-up' element={ <Register /> } />
           <Route path='/hero' element={ <HeroSection /> } />
           <Route path='/home' element={ <Home /> } />
           <Route path='*' element={ <NotFound /> } />
